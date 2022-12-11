@@ -2,7 +2,7 @@
 
 **Wator. Population Dynamics on Planet Water Torus.**
 
-## Abstract: kochsnowflake
+## Abstract: Wator
 
 
 ## More
@@ -14,23 +14,23 @@
 
 ### Running around the Edge of the Mandelbrot Set
 
-![Running around the Edge of the Mandelbrot Set](src/main/resources/img/screen01.png)
+![Running around the Edge of the Mandelbrot Set](img/screen01.png)
 
 ### Running around the Edge of the Mandelbrot Set
 
-![Running around the Edge of the Mandelbrot Set](src/main/resources/img/screen02.png)
+![Running around the Edge of the Mandelbrot Set](img/screen02.png)
 
 ### Computing the Area outside the Mandelbrot Set
 
-![Computing the Area outside the Mandelbrot Set](src/main/resources/img/screen03.png)
+![Computing the Area outside the Mandelbrot Set](img/screen03.png)
 
 ### Clicked somewhere on the Edge of Mandelbrot Set: The Julia Set
 
-![Clicked somewhere on the Edge of Mandelbrot Set: The Julia Set](src/main/resources/img/julia01.png)
+![Clicked somewhere on the Edge of Mandelbrot Set: The Julia Set](img/julia01.png)
 
 ### Clicked  on another Point on the Edge of Mandelbrot Set: The Julia Set
 
-![Clicked on another Point on the Edge of Mandelbrot Set: The Julia Set](src/main/resources/img/julia02.png)
+![Clicked on another Point on the Edge of Mandelbrot Set: The Julia Set](img/julia02.png)
 
 
 ### Git Repository
