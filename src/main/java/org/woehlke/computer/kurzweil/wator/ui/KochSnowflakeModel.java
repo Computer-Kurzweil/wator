@@ -4,7 +4,7 @@ import lombok.Getter;
 import org.woehlke.computer.kurzweil.config.ComputerKurzweilProperties;
 import org.woehlke.computer.kurzweil.wator.commons.model.fractal.GaussianNumberPlane;
 import org.woehlke.computer.kurzweil.wator.commons.model.turing.Point;
-import org.woehlke.computer.kurzweil.wator.model.KochSnowflakeTabStateMachine;
+import org.woehlke.computer.kurzweil.wator.model.WatorTabStateMachine;
 import org.woehlke.computer.kurzweil.wator.commons.model.turing.MandelbrotTuringMachine;
 
 /**
@@ -24,7 +24,7 @@ public class KochSnowflakeModel {
 
     private volatile GaussianNumberPlane gaussianNumberPlane;
     private volatile MandelbrotTuringMachine mandelbrotTuringMachine;
-    private volatile KochSnowflakeTabStateMachine applicationStateMachine;
+    private volatile WatorTabStateMachine applicationStateMachine;
 
     private volatile ComputerKurzweilProperties properties;
     private volatile KochSnowflakeTab frame;
@@ -34,7 +34,7 @@ public class KochSnowflakeModel {
         this.frame = frame;
         this.gaussianNumberPlane = new GaussianNumberPlane(this);
         this.mandelbrotTuringMachine = new MandelbrotTuringMachine(this);
-        this.applicationStateMachine = new KochSnowflakeTabStateMachine();
+        this.applicationStateMachine = new WatorTabStateMachine();
     }
 
     public synchronized boolean click(Point c) {

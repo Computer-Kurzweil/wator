@@ -10,7 +10,7 @@ package org.woehlke.computer.kurzweil.wator.model;
  *
  * Created by tw on 23.08.15.
  */
-public enum KochSnowflakeTabState {
+public enum WatorTabState {
     MANDELBROT,
     MANDELBROT_ZOOM
 }

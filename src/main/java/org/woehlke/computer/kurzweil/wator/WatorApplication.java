@@ -14,9 +14,9 @@ import java.net.URL;
  * @see <a href="https://java.woehlke.org/kochsnowflake">Maven Project Reports</a>
  * @author Thomas Woehlke
  */
-public class KochSnowflakeApplication {
+public class WatorApplication {
 
-    private KochSnowflakeApplication() {
+    private WatorApplication() {
         String configFileName = "/application.yml";
         URL fileUrl = getClass().getResource(configFileName);
         File configFile = new File(fileUrl.getFile());
@@ -29,6 +29,6 @@ public class KochSnowflakeApplication {
      * @param args CLI Parameter
      */
     public static void main(String[] args) {
-        KochSnowflakeApplication application = new KochSnowflakeApplication();
+        WatorApplication application = new WatorApplication();
     }
 }

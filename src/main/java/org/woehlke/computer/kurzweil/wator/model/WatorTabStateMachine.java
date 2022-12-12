@@ -13,31 +13,31 @@ import java.io.Serializable;
  *
  * Created by tw on 16.12.2019.
  */
-public class KochSnowflakeTabStateMachine implements Serializable {
+public class WatorTabStateMachine implements Serializable {
 
     private static final long serialVersionUID = 7526471155622776147L;
 
-    private volatile KochSnowflakeTabState applicationState;
+    private volatile WatorTabState applicationState;
 
-    public KochSnowflakeTabStateMachine() {
-        this.applicationState = KochSnowflakeTabState.MANDELBROT;
+    public WatorTabStateMachine() {
+        this.applicationState = WatorTabState.MANDELBROT;
     }
 
     public void click(){
-        KochSnowflakeTabState nextApplicationState = null;
+        WatorTabState nextApplicationState = null;
         switch (applicationState){
             case MANDELBROT:
-                nextApplicationState = KochSnowflakeTabState.MANDELBROT_ZOOM;
+                nextApplicationState = WatorTabState.MANDELBROT_ZOOM;
                 break;
             case MANDELBROT_ZOOM:
-                nextApplicationState = KochSnowflakeTabState.MANDELBROT;
+                nextApplicationState = WatorTabState.MANDELBROT;
                 break;
         }
         this.setApplicationState(nextApplicationState);
     }
 
     public void setModeSwitch() {
-        KochSnowflakeTabState nextApplicationState = this.applicationState;
+        WatorTabState nextApplicationState = this.applicationState;
         /*
         switch (applicationState){
             case MANDELBROT:
@@ -55,10 +55,10 @@ public class KochSnowflakeTabStateMachine implements Serializable {
     }
 
     public void setModeZoom() {
-        KochSnowflakeTabState nextApplicationState = this.applicationState;
+        WatorTabState nextApplicationState = this.applicationState;
         switch (applicationState){
             case MANDELBROT:
-                nextApplicationState = KochSnowflakeTabState.MANDELBROT_ZOOM;
+                nextApplicationState = WatorTabState.MANDELBROT_ZOOM;
                 break;
             //case JULIA_SET:
               //  nextApplicationState = JULIA_SET_ZOOM;
@@ -70,11 +70,11 @@ public class KochSnowflakeTabStateMachine implements Serializable {
         this.setApplicationState(nextApplicationState);
     }
 
-    public KochSnowflakeTabState getApplicationState() {
+    public WatorTabState getApplicationState() {
         return applicationState;
     }
 
-    public void setApplicationState(KochSnowflakeTabState applicationState) {
+    public void setApplicationState(WatorTabState applicationState) {
         this.applicationState = applicationState;
     }
 
