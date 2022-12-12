@@ -1,7 +1,7 @@
 package org.woehlke.computer.kurzweil.wator.commons.model.fractal;
 
 import org.woehlke.computer.kurzweil.wator.commons.model.turing.Point;
-import org.woehlke.computer.kurzweil.wator.ui.KochSnowflakeModel;
+import org.woehlke.computer.kurzweil.wator.ui.WatorModel;
 
 import java.io.Serializable;
 import java.util.ArrayDeque;
@@ -42,7 +42,7 @@ public class GaussianNumberPlane implements Serializable {
 
     //public static Logger log = Logger.getLogger(GaussianNumberPlane.class.getName());
 
-    public GaussianNumberPlane(KochSnowflakeModel model) {
+    public GaussianNumberPlane(WatorModel model) {
         this.worldDimensions = model.getWorldDimensions();
         this.lattice = new int[worldDimensions.getWidth()][worldDimensions.getHeight()];
         this.complexWorldDimensions = new ComplexNumber(

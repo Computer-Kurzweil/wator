@@ -18,7 +18,7 @@ import org.woehlke.computer.kurzweil.wator.commons.model.turing.MandelbrotTuring
  * Created by tw on 16.12.2019.
  */
 @Getter
-public class KochSnowflakeModel {
+public class WatorModel {
 
     private static final long serialVersionUID = 7526471155622776147L;
 
@@ -27,9 +27,9 @@ public class KochSnowflakeModel {
     private volatile WatorTabStateMachine applicationStateMachine;
 
     private volatile ComputerKurzweilProperties properties;
-    private volatile KochSnowflakeTab frame;
+    private volatile WatorTab frame;
 
-    public KochSnowflakeModel(ComputerKurzweilProperties properties, KochSnowflakeTab frame) {
+    public WatorModel(ComputerKurzweilProperties properties, WatorTab frame) {
         this.properties = properties;
         this.frame = frame;
         this.gaussianNumberPlane = new GaussianNumberPlane(this);
@@ -97,7 +97,7 @@ public class KochSnowflakeModel {
         return gaussianNumberPlane;
     }
 
-    public KochSnowflakeTab getFrame() {
+    public WatorTab getFrame() {
         return frame;
     }
 

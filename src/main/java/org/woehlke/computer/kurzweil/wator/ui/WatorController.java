@@ -11,16 +11,16 @@ package org.woehlke.computer.kurzweil.wator.ui;
  * Date: 05.02.2006
  * Time: 00:36:20
  */
-public class KochSnowflakeController extends Thread implements Runnable {
+public class WatorController extends Thread implements Runnable {
 
     private static final long serialVersionUID = 7526471155622776147L;
 
     private final int THREAD_SLEEP_TIME = 1;
-    private volatile KochSnowflakeModel mandelbrotModel;
-    private volatile KochSnowflakeTab frame;
+    private volatile WatorModel mandelbrotModel;
+    private volatile WatorTab frame;
     private volatile Boolean goOn;
 
-    public KochSnowflakeController(KochSnowflakeModel model, KochSnowflakeTab frame) {
+    public WatorController(WatorModel model, WatorTab frame) {
         this.frame = frame;
         this.mandelbrotModel = model;
         goOn = Boolean.TRUE;

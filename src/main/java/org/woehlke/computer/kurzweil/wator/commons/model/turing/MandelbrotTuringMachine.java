@@ -1,7 +1,7 @@
 package org.woehlke.computer.kurzweil.wator.commons.model.turing;
 
 import org.woehlke.computer.kurzweil.wator.commons.model.fractal.GaussianNumberPlane;
-import org.woehlke.computer.kurzweil.wator.ui.KochSnowflakeModel;
+import org.woehlke.computer.kurzweil.wator.ui.WatorModel;
 
 import java.io.Serializable;
 
@@ -23,7 +23,7 @@ public class MandelbrotTuringMachine implements Serializable {
     private volatile MandelbrotTuringPositions turingPositions;
     private volatile MandelbrotTuringPhaseState turingPhaseState;
 
-    public MandelbrotTuringMachine(KochSnowflakeModel model) {
+    public MandelbrotTuringMachine(WatorModel model) {
         this.gaussianNumberPlane = model.getGaussianNumberPlane();
         this.turingPhaseState = new MandelbrotTuringPhaseState();
         this.turingPositions = new MandelbrotTuringPositions(model.getWorldDimensions());

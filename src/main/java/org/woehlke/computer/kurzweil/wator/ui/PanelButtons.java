@@ -24,9 +24,9 @@ public class PanelButtons extends JPanel implements ActionListener {
     //private volatile JRadioButton radioButtonsZoom;
     private volatile JButton zoomOut;
     //private volatile ButtonGroup radioButtonsGroup;
-    private volatile KochSnowflakeModel model;
+    private volatile WatorModel model;
 
-    public PanelButtons(KochSnowflakeModel model) {
+    public PanelButtons(WatorModel model) {
         this.model = model;
         JLabel buttonsLabel = new JLabel(model.getProperties().getWator().getView().getButtonsLabel());
         /*

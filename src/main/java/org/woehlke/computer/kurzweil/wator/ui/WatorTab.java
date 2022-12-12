@@ -21,7 +21,7 @@ import java.io.Serializable;
  * Date: 04.02.2006
  * Time: 18:47:46
  */
-public class KochSnowflakeTab extends JFrame implements ImageObserver,
+public class WatorTab extends JFrame implements ImageObserver,
         MenuContainer,
         Serializable,
         Accessible,
@@ -30,18 +30,18 @@ public class KochSnowflakeTab extends JFrame implements ImageObserver,
 
     private static final long serialVersionUID = 7526471155622776147L;
 
-    private volatile KochSnowflakeController mandelbrotController;
-    private volatile KochSnowflakeCanvas canvas;
-    private volatile KochSnowflakeModel mandelbrotModel;
+    private volatile WatorController mandelbrotController;
+    private volatile WatorCanvas canvas;
+    private volatile WatorModel mandelbrotModel;
     private volatile Rectangle rectangleBounds;
     private volatile Dimension dimensionSize;
 
-    public KochSnowflakeTab(ComputerKurzweilProperties properties) {
+    public WatorTab(ComputerKurzweilProperties properties) {
         super(properties.getWator().getView().getTitle());
-        this.mandelbrotModel = new KochSnowflakeModel(properties,this);
+        this.mandelbrotModel = new WatorModel(properties,this);
         BoxLayout layout = new BoxLayout(rootPane, BoxLayout.PAGE_AXIS);
-        this.canvas = new KochSnowflakeCanvas(mandelbrotModel);
-        this.mandelbrotController = new KochSnowflakeController(mandelbrotModel, this);
+        this.canvas = new WatorCanvas(mandelbrotModel);
+        this.mandelbrotController = new WatorController(mandelbrotModel, this);
         PanelButtons panelButtons = new PanelButtons(this.mandelbrotModel);
         PanelSubtitle panelSubtitle = new PanelSubtitle(properties.getWator().getView().getSubtitle());
         PanelCopyright panelCopyright = new PanelCopyright(properties.getAllinone().getView().getCopyright());
@@ -144,7 +144,7 @@ public class KochSnowflakeTab extends JFrame implements ImageObserver,
         canvas.setCursor(new Cursor(Cursor.HAND_CURSOR));
     }
 
-    public KochSnowflakeCanvas getCanvas() {
+    public WatorCanvas getCanvas() {
         return canvas;
     }
 }

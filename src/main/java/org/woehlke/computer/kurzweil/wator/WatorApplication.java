@@ -1,7 +1,7 @@
 package org.woehlke.computer.kurzweil.wator;
 
 import org.woehlke.computer.kurzweil.config.ComputerKurzweilProperties;
-import org.woehlke.computer.kurzweil.wator.ui.KochSnowflakeTab;
+import org.woehlke.computer.kurzweil.wator.ui.WatorTab;
 
 import java.io.File;
 import java.net.URL;
@@ -21,7 +21,7 @@ public class WatorApplication {
         URL fileUrl = getClass().getResource(configFileName);
         File configFile = new File(fileUrl.getFile());
         ComputerKurzweilProperties properties = ComputerKurzweilProperties.propertiesFactory(configFile);
-        KochSnowflakeTab frame = new KochSnowflakeTab(properties);
+        WatorTab frame = new WatorTab(properties);
     }
 
     /**

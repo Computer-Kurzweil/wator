@@ -15,14 +15,14 @@ import java.awt.*;
  * Date: 05.02.2006
  * Time: 00:51:51
  */
-public class KochSnowflakeCanvas extends JComponent {
+public class WatorCanvas extends JComponent {
 
     private static final long serialVersionUID = 7526471155622776147L;
 
-    private volatile KochSnowflakeModel app;
+    private volatile WatorModel app;
     private volatile Dimension preferredSize;
 
-    public KochSnowflakeCanvas(KochSnowflakeModel app) {
+    public WatorCanvas(WatorModel app) {
         this.app = app;
         int width = this.app.getWorldDimensions().getWidth();
         int height = this.app.getWorldDimensions().getHeight();
