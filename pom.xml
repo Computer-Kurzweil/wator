@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <name>Water Torus</name>
-    <description>predator–prey Population Dynamics</description>
+    <description>predator–prey Population Dynamics on Planet Water Torus</description>
     <url>https://java.woehlke.org/wator</url>
     <inceptionYear>2022</inceptionYear>
 

@@ -27,13 +27,13 @@
         </breadcrumbs>
         <menu name="Main" inherit="top">
             <item name="Home" href="index.html" />
+            <item name="GitHub Issues" href="https://github.com/Computer-Kurzweil/wator/issues" />
             <item name="GitHub project" href="https://github.com/Computer-Kurzweil/wator" />
-            <item name="GitHub project" href="https://github.com/Computer-Kurzweil/wator" />
+            <item name="License" href="LICENSE.html" />
+            <item name="License" href="LICENSE.code.html" />
             <item name="w: predator–prey equations" href="https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations" />
             <item name="w: Paul Lester Errington" href="https://en.wikipedia.org/wiki/Paul_Lester_Errington" />
             <item name="w: Ecology" href="https://en.wikipedia.org/wiki/Ecology" />
-            <item name="License" href="LICENSE.html" />
-            <item name="License" href="LICENSE.code.html" />
         </menu>
         <menu name="Contribute" inherit="bottom">
             <item name="Issues" href="https://github.com/Computer-Kurzweil/wator/issues/" />

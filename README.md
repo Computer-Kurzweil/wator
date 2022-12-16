@@ -1,45 +1,39 @@
 # Wator
 
-**Wator. Population Dynamics on Planet Water Torus.**
 
-## Abstract: kochsnowflake
+![Java CI with Maven](https://github.com/Computer-Kurzweil/wator/workflows/Java%20CI%20with%20Maven/badge.svg)
+[![Build Status](https://travis-ci.com/Computer-Kurzweil/wator.svg?branch=master)](https://travis-ci.com/Computer-Kurzweil/wator)
 
+**predator–prey Population Dynamics on Planet Water Torus**
 
-## More
-* [https://en.wikipedia.org/wiki/Mandelbrot_set](https://en.wikipedia.org/wiki/Mandelbrot_set)
-* [https://en.wikipedia.org/wiki/Julia_set](https://en.wikipedia.org/wiki/Julia_set)
-* [https://en.wikipedia.org/wiki/Turing_machine](https://en.wikipedia.org/wiki/Turing_machine)
+## Abstract
 
-## Screenshots
-
-### Running around the Edge of the Mandelbrot Set
-
-![Running around the Edge of the Mandelbrot Set](src/main/resources/img/screen01.png)
-
-### Running around the Edge of the Mandelbrot Set
-
-![Running around the Edge of the Mandelbrot Set](src/main/resources/img/screen02.png)
-
-### Computing the Area outside the Mandelbrot Set
-
-![Computing the Area outside the Mandelbrot Set](src/main/resources/img/screen03.png)
-
-### Clicked somewhere on the Edge of Mandelbrot Set: The Julia Set
-
-![Clicked somewhere on the Edge of Mandelbrot Set: The Julia Set](src/main/resources/img/julia01.png)
-
-### Clicked  on another Point on the Edge of Mandelbrot Set: The Julia Set
-
-![Clicked on another Point on the Edge of Mandelbrot Set: The Julia Set](src/main/resources/img/julia02.png)
+Green food appears in a simulatedEvolutionModel with red moving cells. These cells eat the food if it is on their position.
+Movement of the cells depends on random and their DNA. A fit cell moves around and eats enough to reproduce.
+Reproduction is done by splitting the cell and randomly changing the DNA of the two new Cells.
+If a cell doesn't eat enough, it will first stand still and after a while it dies.
 
 
-### Git Repository
-* [https://github.com/Computer-Kurzweil/wator](https://github.com/Computer-Kurzweil/wator.git)
+## Run the Desktop Application
 
-
-### Run the Desktop Application
 ```
-git clone https://github.com/Computer-Kurzweil/kochsnowflake.git
-cd kochsnowflake
+git clone https://github.com/Computer-Kurzweil/wator.git
+cd wator
 ./mvnw
 ```
+
+## Screenshot
+
+![Early Screen](src/main/resources/img/screen1.png)
+
+![Later Screen](src/main/resources/img/screen2.png)
+
+
+## UML Class Model
+![UML Class Model](src/main/resources/img/Class_Model.jpg)
+
+
+## Repositories
+* [Github Repository](https://github.com/Computer-Kurzweil/wator)
+* [Maven Project Reports](https://java.woehlke.org/wator/)
+
