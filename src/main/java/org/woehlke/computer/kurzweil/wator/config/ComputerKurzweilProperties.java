@@ -773,14 +773,26 @@ public class ComputerKurzweilProperties {
     public static class Wator {
 
         @Valid
-        public View view = new View();
+        public ComputerKurzweilProperties.SimulatedEvolution.View view = new SimulatedEvolution.View();
 
         @Valid
-        public Control control = new Control();
+        public ComputerKurzweilProperties.SimulatedEvolution.Control control = new SimulatedEvolution.Control();
 
+        @Valid
+        public ComputerKurzweilProperties.SimulatedEvolution.CellConf cellConf = new SimulatedEvolution.CellConf();
+
+        @Valid
+        public ComputerKurzweilProperties.SimulatedEvolution.Population population = new SimulatedEvolution.Population();
+
+        @Valid
+        public ComputerKurzweilProperties.SimulatedEvolution.Food food = new SimulatedEvolution.Food();
+
+        @Valid
+        public ComputerKurzweilProperties.SimulatedEvolution.GardenOfEden gardenOfEden = new SimulatedEvolution.GardenOfEden();
+
+        @ToString
         @Getter
         @Setter
-        @ToString
         public static class View {
 
             @NotBlank
@@ -789,37 +801,152 @@ public class ComputerKurzweilProperties {
             @NotBlank
             private String subtitle;
 
-            @Valid
-            public Neighborhood neighborhood = new Neighborhood();
+            @NotBlank
+            private String copyright;
 
-            @Getter
-            @Setter
-            @ToString
-            public static class Neighborhood {
-                @NotBlank
-                private String title;
+            @NotNull
+            private Integer width;
 
-                @NotBlank
-                private String typeVonNeumann;
+            @NotNull
+            private Integer height;
 
-                @NotBlank
-                private String typeMoore;
-
-                @NotBlank
-                private String typeWoehlke;
-            }
+            @NotNull
+            private Integer scale;
         }
 
+        @ToString
         @Getter
         @Setter
-        @ToString
         public static class Control {
 
             @NotNull
             private Integer threadSleepTime;
 
             @NotNull
-            private Integer numberOfParticles;
+            private Integer exitStatus;
+
+            @NotNull
+            private Integer queueMaxLength;
+        }
+
+        @ToString
+        @Getter
+        @Setter
+        public static class CellConf {
+
+            @NotNull
+            private Integer fatMax;
+
+            @NotNull
+            private Integer fatHungerMax;
+
+            @NotNull
+            private Integer fatMinimumForSex;
+
+            @NotNull
+            private Integer fatAtBirth;
+
+            @NotNull
+            private Integer fatPerFood;
+
+            @NotNull
+            private Integer ageOfAdulthood;
+
+            @NotNull
+            private Integer ageOld;
+
+            @NotNull
+            private Integer ageMax;
+        }
+
+        @ToString
+        @Getter
+        @Setter
+        public static class Population {
+
+            @NotNull
+            private Integer initialPopulation;
+
+            @NotBlank
+            private String panelPopulationStatistics;
+
+            @NotBlank
+            private String youngCellsLabel;
+
+            @NotBlank
+            private String youngAndFatCellsLabel;
+
+            @NotBlank
+            private String fullAgeCellsLabel;
+
+            @NotBlank
+            private String hungryCellsLabel;
+
+            @NotBlank
+            private String oldCellsLabel;
+
+            @NotBlank
+            private String populationLabel;
+
+            @NotBlank
+            private String generationOldestLabel;
+
+            @NotBlank
+            private String generationYoungestLabel;
+        }
+
+        @ToString
+        @Getter
+        @Setter
+        public static class Food {
+
+            @NotNull
+            private Integer foodPerDay;
+
+            @NotNull
+            private Integer foodPerDayFieldColumns;
+
+            @NotBlank
+            private String foodPerDayLabel;
+
+            @NotBlank
+            private String foodPerDayBorderLabel;
+
+            @NotBlank
+            private String buttonFoodPerDayIncrease;
+
+            @NotBlank
+            private String buttonFoodPerDayDecrease;
+
+            @NotBlank
+            private String panelFood;
+        }
+
+        @ToString
+        @Getter
+        @Setter
+        public static class GardenOfEden {
+
+            @NotBlank
+            private String panelGardenOfEden;
+
+            @NotNull
+            private Boolean gardenOfEdenEnabled;
+
+            @NotBlank
+            private String gardenOfEdenEnabledString;
+
+            @NotBlank
+            private String gardenOfEdenEnabledToggleButton;
+
+            @NotNull
+            private Integer foodPerDay;
+
+            @NotNull
+            private Integer gardenOfEdenLatticeDivisor;
+
+            @NotNull
+            private Integer gardenOfEdenLatticeDivisorPadding;
         }
     }
 
