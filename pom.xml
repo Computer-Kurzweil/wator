@@ -7,13 +7,8 @@
     <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>TaterTor</name>
-    <description>Computer Science InfotainmentComputer Science Infotainment.
-        A Tribute to the "Computer Kurzweil" named Article Series in Spektrum der Wissenschaft
-        which is the german release of Scientific American.
-        The Article Series "Computer Kurzweil" were also published as Books.
-        Content: Cellular Automata, Fractal Geometry, Artficial Life, Simulation,
-        Automata and Turing Machines, Systems Theory.</description>
+    <name>Water Torus</name>
+    <description>predator–prey Population Dynamics</description>
     <url>https://java.woehlke.org/wator</url>
     <inceptionYear>2022</inceptionYear>
 
