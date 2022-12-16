@@ -159,7 +159,7 @@ turmite:
 wator:
   view:
     title: 'WaTor'
-    subtitle: 'Population Dynamics on Planet Water Torus'
+    subtitle: 'predator–prey Population Dynamics on Planet Water Torus'
     copyright: "(C) 2022 Thomas Woehlke"
     width: 320
     height: 234

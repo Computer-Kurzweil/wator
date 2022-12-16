@@ -103,7 +103,7 @@ public class WatorFrame extends JFrame implements MenuContainer,
     private volatile Dimension dimensionSize;
 
     public WatorFrame(ComputerKurzweilProperties computerKurzweilProperties) {
-        super(TITLE);
+        super(computerKurzweilProperties.getWator().getView().getTitle());
         this.computerKurzweilProperties = computerKurzweilProperties;
         this.watorModel = new WatorModel(
             computerKurzweilProperties
@@ -116,8 +116,8 @@ public class WatorFrame extends JFrame implements MenuContainer,
         this.watorController = new WatorController(
             this.watorModel, this.canvas, this.panelLifeCycle, this
         );
-        String subTitle =  computerKurzweilProperties.getSimulatedevolution().getView().getSubtitle();
-        String copyright =  computerKurzweilProperties.getSimulatedevolution().getView().getCopyright();
+        String subTitle =  computerKurzweilProperties.getWator().getView().getSubtitle();
+        String copyright =  computerKurzweilProperties.getWator().getView().getCopyright();
         this.subTitleLabel = new JLabel(subTitle, CENTER);
         this.copyrightLabel = new JLabel(copyright, CENTER);
         this.watorParameter = new WatorParameter();
@@ -129,8 +129,7 @@ public class WatorFrame extends JFrame implements MenuContainer,
         this.add(this.canvas, BorderLayout.CENTER);
         this.add(this.panelLifeCycle, BorderLayout.SOUTH);
         addWindowListener(this);
-        pack();
-        showMe();
+        showMeInit();
     }
 
     public void showMeInit() {
