@@ -23,7 +23,7 @@ public class WatorApplication {
 
     private WatorApplication() {
         String configFileName = "application.yml";
-        String jarFilePath = "target/simulatedevolution.jar";
+        String jarFilePath = "target/wator.jar";
         ComputerKurzweilProperties properties = ComputerKurzweilProperties.propertiesFactory(configFileName, jarFilePath);
         this.watorTab = new WatorTab(properties);
 
