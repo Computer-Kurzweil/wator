@@ -24,13 +24,13 @@ cd wator
 
 ## Screenshot
 
-![Early Screen](src/main/resources/img/screen1.png)
+![Early Screen](img/screen1.png)
 
-![Later Screen](src/main/resources/img/screen2.png)
+![Later Screen](img/screen2.png)
 
 
 ## UML Class Model
-![UML Class Model](src/main/resources/img/Class_Model.jpg)
+![UML Class Model](img/Class_Model.jpg)
 
 
 ## Repositories
