@@ -9,7 +9,7 @@ import org.woehlke.computer.kurzweil.wator.config.ComputerKurzweilProperties;
 import org.woehlke.computer.kurzweil.wator.model.cell.Cell;
 import org.woehlke.computer.kurzweil.wator.model.census.WatorPopulationCensus;
 import org.woehlke.computer.kurzweil.wator.model.census.WatorPopulationCensusContainer;
-import org.woehlke.computer.kurzweil.wator.model.world.WatorParameter;
+import org.woehlke.computer.kurzweil.wator.config.WatorParameter;
 import org.woehlke.computer.kurzweil.wator.model.lattice.WatorWorldLattice;
 import org.woehlke.computer.kurzweil.wator.model.world.WorldPoint;
 

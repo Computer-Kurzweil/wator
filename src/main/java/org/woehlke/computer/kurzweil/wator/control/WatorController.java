@@ -1,7 +1,7 @@
 package org.woehlke.computer.kurzweil.wator.control;
 
 import lombok.extern.log4j.Log4j2;
-import org.woehlke.computer.kurzweil.wator.view.WatorTab;
+import org.woehlke.computer.kurzweil.wator.view.WatorFrame;
 import org.woehlke.computer.kurzweil.wator.view.canvas.WatorCanvas;
 import org.woehlke.computer.kurzweil.wator.model.WatorModel;
 import org.woehlke.computer.kurzweil.wator.view.canvas.population.PopulationStatisticsElementsPanelLifeCycle;
@@ -29,14 +29,14 @@ public class WatorController extends Thread implements Runnable, Serializable {
     /**
      * Data Model for the Simulation
      */
-    private final WatorModel watorModel;
+    private final WatorModel model;
 
     /**
      * Canvas, where to paint in the GUI.
      */
     private final WatorCanvas canvas;
     private final PopulationStatisticsElementsPanelLifeCycle panelLifeCycle;
-    private final WatorTab tab;
+    private final WatorFrame tab;
 
     /**
      * Time to Wait in ms.
@@ -49,15 +49,15 @@ public class WatorController extends Thread implements Runnable, Serializable {
     private Boolean mySemaphore;
 
     public WatorController(
-        WatorModel watorModel,
+        WatorModel model,
         WatorCanvas canvas,
         PopulationStatisticsElementsPanelLifeCycle panelLifeCycle,
-        WatorTab watorTab
+        WatorFrame frame
     ) {
-        this.watorModel = watorModel;
+        this.model = model;
         this.canvas = canvas;
         this.panelLifeCycle = panelLifeCycle;
-        this.tab = watorTab;
+        this.tab = frame;
         this.timeToWait = this.tab.getComputerKurzweilProperties().getSimulatedevolution()
             .getControl().getThreadSleepTime();
         mySemaphore = Boolean.TRUE;
@@ -69,7 +69,7 @@ public class WatorController extends Thread implements Runnable, Serializable {
             synchronized (mySemaphore) {
                 doMyJob = mySemaphore.booleanValue();
             }
-            doMyJob = watorModel.letLivePopulation();
+            doMyJob = model.letLivePopulation();
             canvas.repaint();
             panelLifeCycle.update();
             panelLifeCycle.repaint();

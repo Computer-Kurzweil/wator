@@ -6,7 +6,7 @@ import lombok.ToString;
 import lombok.extern.log4j.Log4j2;
 import org.woehlke.computer.kurzweil.wator.config.ComputerKurzweilProperties;
 import org.woehlke.computer.kurzweil.wator.model.census.WatorPopulationCensusContainer;
-import org.woehlke.computer.kurzweil.wator.view.WatorTab;
+import org.woehlke.computer.kurzweil.wator.view.WatorFrame;
 import org.woehlke.computer.kurzweil.wator.view.layouts.FlowLayoutCenter;
 import org.woehlke.computer.kurzweil.wator.view.tabs.SubTabImpl;
 import org.woehlke.computer.kurzweil.wator.model.census.WatorPopulationCensus;
@@ -57,12 +57,12 @@ public class PopulationStatisticsElementsPanelLifeCycle extends SubTabImpl imple
     private final FlowLayoutCenter layout;
     private final FlowLayout layoutSubPanel;
 
-    private final WatorTab tab;
+    private final WatorFrame tab;
 
     private final WatorPopulationCensusContainer watorPopulationCensusContainer;
 
     public PopulationStatisticsElementsPanelLifeCycle(
-        WatorTab tab,
+        WatorFrame tab,
         WatorPopulationCensusContainer watorPopulationCensusContainer
     ) {
         super(

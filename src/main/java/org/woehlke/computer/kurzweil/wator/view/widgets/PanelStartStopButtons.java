@@ -3,7 +3,7 @@ package org.woehlke.computer.kurzweil.wator.view.widgets;
 import lombok.Getter;
 import lombok.ToString;
 import lombok.extern.log4j.Log4j2;
-import org.woehlke.computer.kurzweil.wator.view.WatorTab;
+import org.woehlke.computer.kurzweil.wator.view.WatorFrame;
 import org.woehlke.computer.kurzweil.wator.view.tabs.SubTabImpl;
 
 import javax.swing.*;
@@ -30,7 +30,7 @@ public class PanelStartStopButtons extends SubTabImpl implements Serializable {
     @Getter
     private final JButton stopButton;
 
-    public PanelStartStopButtons(WatorTab tab){
+    public PanelStartStopButtons(WatorFrame tab){
         super(
             tab.getComputerKurzweilProperties().getAllinone().getView().getStartStopp(),
             tab.getComputerKurzweilProperties()

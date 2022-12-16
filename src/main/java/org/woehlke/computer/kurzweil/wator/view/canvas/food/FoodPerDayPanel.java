@@ -3,7 +3,7 @@ package org.woehlke.computer.kurzweil.wator.view.canvas.food;
 import lombok.Getter;
 import lombok.ToString;
 import lombok.extern.log4j.Log4j2;
-import org.woehlke.computer.kurzweil.wator.view.WatorTab;
+import org.woehlke.computer.kurzweil.wator.view.WatorFrame;
 import org.woehlke.computer.kurzweil.wator.view.tabs.SubTabImpl;
 import org.woehlke.computer.kurzweil.wator.view.tabs.TabPanel;
 import org.woehlke.computer.kurzweil.wator.model.WatorModel;
@@ -27,7 +27,7 @@ public class FoodPerDayPanel extends SubTabImpl implements Serializable {
     static final long serialVersionUID = 242L;
 
     @ToString.Exclude
-    private final WatorTab tab;
+    private final WatorFrame tab;
     private final String foodPerDayBorderLabel;
     private final FoodPerDayLabel foodPerDayLabel;
     private final FoodPerDayTextField foodPerDayTextField;
@@ -35,7 +35,7 @@ public class FoodPerDayPanel extends SubTabImpl implements Serializable {
     private final FoodPerDayDecreaseButton foodPerDayDecreaseButton;
     private final WatorModel tabModel;
 
-    public FoodPerDayPanel(WatorTab tab) {
+    public FoodPerDayPanel(WatorFrame tab) {
         super(
             tab.getComputerKurzweilProperties().getSimulatedevolution().getFood().getFoodPerDayLabel(),
             tab.getComputerKurzweilProperties()

@@ -1,4 +1,4 @@
-package org.woehlke.computer.kurzweil.wator.model.world;
+package org.woehlke.computer.kurzweil.wator.config;
 
 import lombok.*;
 

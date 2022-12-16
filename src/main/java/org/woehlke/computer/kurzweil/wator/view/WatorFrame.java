@@ -5,7 +5,7 @@ import lombok.extern.log4j.Log4j2;
 import org.woehlke.computer.kurzweil.wator.config.ComputerKurzweilProperties;
 import org.woehlke.computer.kurzweil.wator.control.WatorController;
 import org.woehlke.computer.kurzweil.wator.model.WatorModel;
-import org.woehlke.computer.kurzweil.wator.model.world.WatorParameter;
+import org.woehlke.computer.kurzweil.wator.config.WatorParameter;
 import org.woehlke.computer.kurzweil.wator.view.canvas.WatorCanvas;
 import org.woehlke.computer.kurzweil.wator.view.canvas.population.PopulationStatisticsElementsPanelLifeCycle;
 
@@ -49,7 +49,7 @@ import static javax.swing.SwingConstants.CENTER;
  */
 @Log4j2
 @Getter
-public class WatorTab extends JFrame implements MenuContainer,
+public class WatorFrame extends JFrame implements MenuContainer,
     WindowListener, ActionListener, Serializable, ImageObserver, Accessible {
 
     static final long serialVersionUID = 242L;
@@ -102,7 +102,7 @@ public class WatorTab extends JFrame implements MenuContainer,
     private volatile Rectangle rectangleBounds;
     private volatile Dimension dimensionSize;
 
-    public WatorTab(ComputerKurzweilProperties computerKurzweilProperties) {
+    public WatorFrame(ComputerKurzweilProperties computerKurzweilProperties) {
         super(TITLE);
         this.computerKurzweilProperties = computerKurzweilProperties;
         this.watorModel = new WatorModel(

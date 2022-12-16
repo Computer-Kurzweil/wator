@@ -3,7 +3,7 @@ package org.woehlke.computer.kurzweil.wator.view.canvas.garden;
 import lombok.Getter;
 import lombok.ToString;
 import lombok.extern.log4j.Log4j2;
-import org.woehlke.computer.kurzweil.wator.view.WatorTab;
+import org.woehlke.computer.kurzweil.wator.view.WatorFrame;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,11 +26,11 @@ public class GardenOfEdenPanel extends JPanel implements Serializable {
     static final long serialVersionUID = 242L;
 
     @ToString.Exclude
-    private final WatorTab tab;
+    private final WatorFrame tab;
     private final String gardenOfEdenPanelBorderLabel;
     //private final CompoundBorder gardenOfEdenPanelBorder;
 
-    public GardenOfEdenPanel(WatorTab tab) {
+    public GardenOfEdenPanel(WatorFrame tab) {
         super(new FlowLayout());
         this.tab = tab;
         this.gardenOfEdenPanelBorderLabel =

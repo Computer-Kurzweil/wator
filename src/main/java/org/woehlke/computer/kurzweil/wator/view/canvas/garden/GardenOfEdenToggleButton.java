@@ -3,7 +3,7 @@ package org.woehlke.computer.kurzweil.wator.view.canvas.garden;
 import lombok.Getter;
 import lombok.ToString;
 import lombok.extern.log4j.Log4j2;
-import org.woehlke.computer.kurzweil.wator.view.WatorTab;
+import org.woehlke.computer.kurzweil.wator.view.WatorFrame;
 
 import javax.swing.*;
 import java.io.Serializable;
@@ -25,10 +25,10 @@ public class GardenOfEdenToggleButton extends JToggleButton implements Serializa
     static final long serialVersionUID = 242L;
 
     @ToString.Exclude
-    private final WatorTab tab;
+    private final WatorFrame tab;
     private final String buttonToggleGardenOfEdenString;
 
-    public GardenOfEdenToggleButton(WatorTab tab) {
+    public GardenOfEdenToggleButton(WatorFrame tab) {
         super(
             tab.getComputerKurzweilProperties().getSimulatedevolution()
                 .getGardenOfEden().getGardenOfEdenEnabledToggleButton()

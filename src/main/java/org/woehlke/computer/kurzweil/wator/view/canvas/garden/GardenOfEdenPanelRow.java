@@ -3,7 +3,7 @@ package org.woehlke.computer.kurzweil.wator.view.canvas.garden;
 import lombok.Getter;
 import lombok.ToString;
 import lombok.extern.log4j.Log4j2;
-import org.woehlke.computer.kurzweil.wator.view.WatorTab;
+import org.woehlke.computer.kurzweil.wator.view.WatorFrame;
 import org.woehlke.computer.kurzweil.wator.view.tabs.SubTabImpl;
 import org.woehlke.computer.kurzweil.wator.view.tabs.TabPanel;
 import org.woehlke.computer.kurzweil.wator.model.WatorModel;
@@ -27,14 +27,14 @@ public class GardenOfEdenPanelRow extends SubTabImpl implements Serializable {
     static final long serialVersionUID = 242L;
 
     @ToString.Exclude
-    private final WatorTab tab;
+    private final WatorFrame tab;
     @ToString.Exclude
     private final WatorModel tabModel;
     private final GardenOfEdenCheckBox gardenOfEdenEnabled;
     private final GardenOfEdenToggleButton buttonToggleGardenOfEden;
     //private final GardenOfEdenPanel gardenOfEdenPanel;
 
-    public GardenOfEdenPanelRow(WatorTab tab) {
+    public GardenOfEdenPanelRow(WatorFrame tab) {
         super("Garden of Eden",tab.getComputerKurzweilProperties());
         this.tab = tab;
         this.tabModel = this.tab.getWatorModel();

@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.ToString;
 import lombok.extern.log4j.Log4j2;
 import org.woehlke.computer.kurzweil.wator.config.ComputerKurzweilProperties;
-import org.woehlke.computer.kurzweil.wator.view.WatorTab;
+import org.woehlke.computer.kurzweil.wator.view.WatorFrame;
 import org.woehlke.computer.kurzweil.wator.view.layouts.FlowLayoutCenter;
 import org.woehlke.computer.kurzweil.wator.view.tabs.SubTabImpl;
 
@@ -45,13 +45,13 @@ public class PopulationStatisticsElementsPanelCounted extends SubTabImpl impleme
     private final String generationOldestLabel;
     private final String generationYoungestLabel;
 
-    private final WatorTab tab;
+    private final WatorFrame tab;
     private final CompoundBorder border;
     private final FlowLayoutCenter layout;
     private final FlowLayout layoutSubPanel;
 
     @Deprecated
-    public PopulationStatisticsElementsPanelCounted(WatorTab tab) {
+    public PopulationStatisticsElementsPanelCounted(WatorFrame tab) {
         super(
             tab.getComputerKurzweilProperties().getSimulatedevolution().getPopulation().getPanelPopulationStatistics(),
             tab.getComputerKurzweilProperties()
