@@ -2,14 +2,12 @@ package org.woehlke.computer.kurzweil.wator.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import lombok.*;
-import lombok.extern.log4j.Log4j2;
-import org.woehlke.computer.kurzweil.wator.view.tabs.TabType;
-
-
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import lombok.*;
+import lombok.extern.log4j.Log4j2;
+
 import java.io.InputStream;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
@@ -30,7 +28,6 @@ import java.util.jar.JarFile;
 @Valid
 @Getter
 @Setter
-////@Validated
 public class ComputerKurzweilProperties {
 
     @Valid
@@ -72,7 +69,6 @@ public class ComputerKurzweilProperties {
     @Valid
     public Gameoflive gameoflive = new Gameoflive();
 
-    ////@Validated
     @ToString
     @Getter
     @Setter
@@ -84,7 +80,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public View view = new View();
 
-        ////@Validated
         @Getter
         @Setter
         @ToString
@@ -97,7 +92,6 @@ public class ComputerKurzweilProperties {
             private Integer height;
         }
 
-        ////@Validated
         @ToString
         @Getter
         @Setter
@@ -135,7 +129,6 @@ public class ComputerKurzweilProperties {
         }
     }
 
-    ////@Validated
     @ToString
     @Getter
     @Setter
@@ -147,7 +140,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public Control control = new Control();
 
-        ////@Validated
         @ToString
         @Getter
         @Setter
@@ -175,7 +167,6 @@ public class ComputerKurzweilProperties {
             private String buttonsLabel;
         }
 
-        ////@Validated
         @ToString
         @Getter
         @Setter
@@ -186,7 +177,6 @@ public class ComputerKurzweilProperties {
         }
     }
 
-    ////@Validated
     @ToString
     @Getter
     @Setter
@@ -210,7 +200,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public GardenOfEden gardenOfEden = new GardenOfEden();
 
-        ////@Validated
         @ToString
         @Getter
         @Setter
@@ -235,7 +224,6 @@ public class ComputerKurzweilProperties {
             private Integer scale;
         }
 
-        ////@Validated
         @ToString
         @Getter
         @Setter
@@ -251,7 +239,6 @@ public class ComputerKurzweilProperties {
             private Integer queueMaxLength;
         }
 
-        ////@Validated
         @ToString
         @Getter
         @Setter
@@ -282,7 +269,6 @@ public class ComputerKurzweilProperties {
             private Integer ageMax;
         }
 
-        ////@Validated
         @ToString
         @Getter
         @Setter
@@ -319,7 +305,6 @@ public class ComputerKurzweilProperties {
             private String generationYoungestLabel;
         }
 
-        ////@Validated
         @ToString
         @Getter
         @Setter
@@ -347,7 +332,6 @@ public class ComputerKurzweilProperties {
             private String panelFood;
         }
 
-        ////@Validated
         @ToString
         @Getter
         @Setter
@@ -376,7 +360,6 @@ public class ComputerKurzweilProperties {
         }
     }
 
-    ////@Validated
     @ToString
     @Getter
     @Setter
@@ -388,7 +371,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public Control control = new Control();
 
-        //@Validated
         @ToString
         @Getter
         @Setter
@@ -403,7 +385,6 @@ public class ComputerKurzweilProperties {
             @Valid
             public Neighborhood neighborhood = new Neighborhood();
 
-            //@Validated
             @ToString
             @Getter
             @Setter
@@ -423,7 +404,6 @@ public class ComputerKurzweilProperties {
             }
         }
 
-        ////@Validated
         @ToString
         @Getter
         @Setter
@@ -434,7 +414,6 @@ public class ComputerKurzweilProperties {
         }
     }
 
-    ////@Validated
     @ToString
     @Getter
     @Setter
@@ -446,7 +425,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public Control control = new Control();
 
-        //@Validated
         @ToString
         @Getter
         @Setter
@@ -459,7 +437,6 @@ public class ComputerKurzweilProperties {
             private String subtitle;
         }
 
-        ////@Validated
         @ToString
         @Getter
         @Setter
@@ -470,7 +447,6 @@ public class ComputerKurzweilProperties {
         }
     }
 
-    //@Validated
     @ToString
     @Getter
     @Setter
@@ -482,7 +458,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public Control control = new Control();
 
-        //@Validated
         @ToString
         @Getter
         @Setter
@@ -495,7 +470,6 @@ public class ComputerKurzweilProperties {
             private String subtitle;
         }
 
-        //@Validated
         @ToString
         @Getter
         @Setter
@@ -520,7 +494,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public Control control = new Control();
 
-        //@Validated
         @ToString
         @Getter
         @Setter
@@ -535,7 +508,6 @@ public class ComputerKurzweilProperties {
             @Valid
             public Neighborhood neighborhood = new Neighborhood();
 
-            //@Validated
             @ToString
             @Getter
             @Setter
@@ -555,7 +527,6 @@ public class ComputerKurzweilProperties {
             }
         }
 
-        //@Validated
         @ToString
         @Getter
         @Setter
@@ -580,7 +551,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public Control control = new Control();
 
-        //@Validated
         @ToString
         @Getter
         @Setter
@@ -595,7 +565,6 @@ public class ComputerKurzweilProperties {
             @Valid
             public Neighborhood neighborhood = new Neighborhood();
 
-            //@Validated
             @ToString
             @Getter
             @Setter
@@ -615,7 +584,6 @@ public class ComputerKurzweilProperties {
             }
         }
 
-        //@Validated
         @ToString
         @Getter
         @Setter
@@ -640,7 +608,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public Control control = new Control();
 
-        //@Validated
         @ToString
         @Getter
         @Setter
@@ -655,7 +622,6 @@ public class ComputerKurzweilProperties {
             @Valid
             public Neighborhood neighborhood = new Neighborhood();
 
-            //@Validated
             @Getter
             @Setter
             @ToString
@@ -675,7 +641,6 @@ public class ComputerKurzweilProperties {
             }
         }
 
-        //@Validated
         @ToString
         @Getter
         @Setter
@@ -689,7 +654,6 @@ public class ComputerKurzweilProperties {
         }
     }
 
-
     @Getter
     @Setter
     @ToString
@@ -701,7 +665,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public Control control = new Control();
 
-        //@Validated
         @Getter
         @Setter
         @ToString
@@ -716,7 +679,6 @@ public class ComputerKurzweilProperties {
             @Valid
             public Neighborhood neighborhood = new Neighborhood();
 
-            //@Validated
             @Getter
             @Setter
             @ToString
@@ -735,7 +697,6 @@ public class ComputerKurzweilProperties {
             }
         }
 
-        //@Validated
         @Getter
         @Setter
         @ToString
@@ -760,7 +721,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public Control control = new Control();
 
-        //@Validated
         @Getter
         @Setter
         @ToString
@@ -775,7 +735,6 @@ public class ComputerKurzweilProperties {
             @Valid
             public Neighborhood neighborhood = new Neighborhood();
 
-            //@Validated
             @ToString
             @Getter
             @Setter
@@ -795,7 +754,6 @@ public class ComputerKurzweilProperties {
             }
         }
 
-        //@Validated
         @Getter
         @Setter
         @ToString
@@ -820,7 +778,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public Control control = new Control();
 
-        //@Validated
         @Getter
         @Setter
         @ToString
@@ -835,7 +792,6 @@ public class ComputerKurzweilProperties {
             @Valid
             public Neighborhood neighborhood = new Neighborhood();
 
-            //@Validated
             @Getter
             @Setter
             @ToString
@@ -854,7 +810,6 @@ public class ComputerKurzweilProperties {
             }
         }
 
-        //@Validated
         @Getter
         @Setter
         @ToString
@@ -879,7 +834,6 @@ public class ComputerKurzweilProperties {
         @Valid
         public Control control = new Control();
 
-        //@Validated
         @Getter
         @Setter
         @ToString
@@ -894,7 +848,6 @@ public class ComputerKurzweilProperties {
             @Valid
             public Neighborhood neighborhood = new Neighborhood();
 
-            //@Validated
             @Getter
             @Setter
             @ToString
@@ -914,7 +867,6 @@ public class ComputerKurzweilProperties {
             }
         }
 
-        //@Validated
         @Getter
         @Setter
         @ToString
@@ -946,67 +898,5 @@ public class ComputerKurzweilProperties {
         }
         log.info("propertiesFactory done");
         return properties;
-    }
-
-    public String getSubtitle(TabType tabType){
-        switch (tabType){
-            case CYCLIC_CELLULAR_AUTOMATON:
-                return this.getCca().getView().getSubtitle();
-            case DIFFUSION_LIMITED_AGGREGATION:
-                return this.getDla().getView().getSubtitle();
-            case SIMULATED_EVOLUTION:
-                return this.getSimulatedevolution().getView().getSubtitle();
-            case MANDELBROT_SET:
-                return this.getMandelbrot().getView().getSubtitle();
-            case RANDOM_WALK_WIENER_PROCESS:
-                return this.getRandomwalk().getView().getSubtitle();
-            case KOCH_SNOWFLAKE:
-                return this.getKochsnowflake().getView().getSubtitle();
-            case SAME_GAME:
-                return this.getSamegame().getView().getSubtitle();
-            case SIERPINSKI_TRIANGLE:
-                return this.getSierpinskitriangle().getView().getSubtitle();
-            case TETRIS:
-                return this.getTetris().getView().getSubtitle();
-            case TURMITE:
-                return this.getTurmite().getView().getSubtitle();
-            case WATOR:
-                return this.getWator().getView().getSubtitle();
-            case CONWAYS_GAME_OF_LIFE:
-                return this.getGameoflive().getView().getSubtitle();
-            default:
-                return "UNDEFINED";
-        }
-    }
-
-    public String getTitle(TabType tabType){
-        switch (tabType){
-            case CYCLIC_CELLULAR_AUTOMATON:
-                return this.getCca().getView().getTitle();
-            case DIFFUSION_LIMITED_AGGREGATION:
-                return this.getDla().getView().getTitle();
-            case SIMULATED_EVOLUTION:
-                return  this.getSimulatedevolution().getView().getTitle();
-            case MANDELBROT_SET:
-                return this.getMandelbrot().getView().getTitle();
-            case RANDOM_WALK_WIENER_PROCESS:
-                return this.getRandomwalk().getView().getTitle();
-            case KOCH_SNOWFLAKE:
-                return this.getKochsnowflake().getView().getTitle();
-            case SAME_GAME:
-                return this.getSamegame().getView().getTitle();
-            case SIERPINSKI_TRIANGLE:
-                return  this.getSierpinskitriangle().getView().getTitle();
-            case TETRIS:
-                return  this.getTetris().getView().getTitle();
-            case TURMITE:
-                return this.getTurmite().getView().getTitle();
-            case WATOR:
-                return this.getWator().getView().getTitle();
-            case CONWAYS_GAME_OF_LIFE:
-                return this.getGameoflive().getView().getTitle();
-            default:
-                return "UNDEFINED";
-        }
     }
 }
