@@ -4,7 +4,7 @@
 
     <groupId>org.woehlke.computer.kurzweil</groupId>
     <artifactId>wator</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Water Torus</name>
@@ -16,7 +16,7 @@
         <connection>scm:git@github.com:Computer-Kurzweil/wator.git</connection>
         <developerConnection>scm:git:git@github.com:Computer-Kurzweil/wator.git</developerConnection>
         <url>https://github.com/Computer-Kurzweil/wator/tree/${project.scm.tag}</url>
-        <tag>wator-1.0.3</tag>
+        <tag>head</tag>
     </scm>
 
     <organization>
