@@ -66,27 +66,25 @@ public class WatorController extends Thread implements Runnable, Serializable {
     public void run() {
         boolean doMyJob;
         do {
-            synchronized (mySemaphore) {
-                doMyJob = mySemaphore.booleanValue();
-            }
-            doMyJob = model.letLivePopulation();
-            canvas.repaint();
+            doMyJob = isRunning();
+            model.letLivePopulation();
             panelLifeCycle.update();
             panelLifeCycle.repaint();
+            canvas.repaint();
             tab.repaint();
             try {
                 sleep(timeToWait);
-            }
-            catch (InterruptedException e) {
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
-        while (doMyJob);
+        } while (doMyJob);
     }
 
-    public void exit() {
-        synchronized (mySemaphore) {
-            mySemaphore = Boolean.FALSE;
-        }
+    public synchronized Boolean isRunning(){
+        return this.mySemaphore;
+    }
+
+    public synchronized void exit() {
+        mySemaphore = Boolean.FALSE;
     }
 }
