@@ -41,17 +41,17 @@
 
     <distributionManagement>
         <site>
-            <id>kochsnowflake.public_html</id>
+            <id>wator.public_html</id>
             <url>file://${user.home}/public_html/java/wator</url>
         </site>
         <snapshotRepository>
             <id>snapshots</id>
-            <name>tw-thinkpad-snapshots</name>
+            <name>libs-snapshot-local</name>
             <url>file://${user.home}/public_html/java/libs-snapshot-local</url>
         </snapshotRepository>
         <repository>
             <id>central</id>
-            <name>tw-thinkpad-releases</name>
+            <name>libs-release-local</name>
             <url>file://${user.home}/public_html/java/libs-release-local</url>
         </repository>
     </distributionManagement>

@@ -9,7 +9,7 @@
         <version>1.3</version>
     </skin>
     <bannerLeft>
-        <name>Koch Snowflake</name>
+        <name>WaTor</name>
         <src>/img/phasenraum_logo.gif</src>
         <href>https://java.woehlke.org/</href>
     </bannerLeft>
@@ -23,7 +23,7 @@
             <item name="GitHub project" href="https://github.com/Computer-Kurzweil/wator/" />
         </links>
         <breadcrumbs>
-            <item name="Koch Snowflake" href="index.html" />
+            <item name="WaTor" href="index.html" />
         </breadcrumbs>
         <menu name="Main" inherit="top">
             <item name="Home" href="index.html" />
