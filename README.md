@@ -2,7 +2,6 @@
 
 
 ![Java CI with Maven](https://github.com/Computer-Kurzweil/wator/workflows/Java%20CI%20with%20Maven/badge.svg)
-[![Build Status](https://travis-ci.com/Computer-Kurzweil/wator.svg?branch=master)](https://travis-ci.com/Computer-Kurzweil/wator)
 
 **predator–prey Population Dynamics on Planet Water Torus**
 
