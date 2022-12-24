@@ -28,6 +28,10 @@ simulatedevolution:
   view:
     title: 'Simulated Evolution'
     subtitle: 'Artificial Life Simulation of Bacteria Motion depending on DNA'
+    copyright: "(C) 2022 Thomas Woehlke"
+    width: 320
+    height: 234
+    scale: 3
   control:
     threadSleepTime: 100
     exitStatus: 0
@@ -155,15 +159,51 @@ turmite:
 wator:
   view:
     title: 'WaTor'
-    subtitle: 'Population Dynamics on Planet Water Torus'
-    neighborhood:
-      title: 'Neighborhood'
-      typeVonNeumann: 'Von Neumann'
-      typeMoore: 'Moore'
-      typeWoehlke: 'Woehlke'
+    subtitle: 'predator–prey Population Dynamics on Planet Water Torus'
+    copyright: "(C) 2022 Thomas Woehlke"
+    width: 320
+    height: 234
+    scale: 3
   control:
-    threadSleepTime: 50
-    numberOfParticles: 30000
+    threadSleepTime: 100
+    exitStatus: 0
+    queueMaxLength: 1000
+  cellConf:
+    fatMax: 2000
+    fatHungerMax: 1000
+    fatMinimumForSex: 800
+    fatAtBirth: 500
+    fatPerFood: 25
+    ageOfAdulthood: 200
+    ageOld: 800
+    ageMax: 1000
+  population:
+    initialPopulation: 20
+    panelPopulationStatistics: 'Statistics'
+    youngCellsLabel: 'young'
+    youngAndFatCellsLabel: 'fat'
+    fullAgeCellsLabel: 'adult'
+    hungryCellsLabel: 'hungry'
+    oldCellsLabel: 'old'
+    populationLabel: 'all'
+    generationOldestLabel: 'oldest Generation'
+    generationYoungestLabel: 'youngest Generation'
+  food:
+    foodPerDay: 20
+    foodPerDayFieldColumns: 3
+    foodPerDayLabel: 'Food per Day:'
+    foodPerDayBorderLabel: 'Food per Day:'
+    buttonFoodPerDayIncrease: '+'
+    buttonFoodPerDayDecrease: '-'
+    panelFood: 'Food'
+  gardenOfEden:
+    panelGardenOfEden: 'Garden of Eden'
+    gardenOfEdenEnabled: true
+    gardenOfEdenEnabledString: 'enabled'
+    gardenOfEdenEnabledToggleButton: 'Change'
+    foodPerDay: 80
+    gardenOfEdenLatticeDivisor: 5
+    gardenOfEdenLatticeDivisorPadding: 2
 gameoflive:
   view:
     title: 'Conways Game of Life'
