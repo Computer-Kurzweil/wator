@@ -16,7 +16,7 @@
         <connection>scm:git@github.com:Computer-Kurzweil/wator.git</connection>
         <developerConnection>scm:git:git@github.com:Computer-Kurzweil/wator.git</developerConnection>
         <url>https://github.com/Computer-Kurzweil/wator/tree/${project.scm.tag}</url>
-        <tag>head</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <organization>
