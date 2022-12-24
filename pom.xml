@@ -8,7 +8,6 @@
         <version>1.0.0</version>
     </parent>
 
-    <groupId>org.woehlke.computer.kurzweil</groupId>
     <artifactId>wator</artifactId>
     <version>1.0.5-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -53,5 +52,49 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>org.woehlke.computer.kurzweil.wator.WatorApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>run</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <skipTests>false</skipTests>
+            </properties>
+            <build>
+                <finalName>${project.artifactId}</finalName>
+                <defaultGoal>clean install exec:java</defaultGoal>
+            </build>
+        </profile>
+        <profile>
+            <id>build</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <skipTests>false</skipTests>
+            </properties>
+            <build>
+                <finalName>${project.artifactId}</finalName>
+                <defaultGoal>
+                    clean dependency:resolve dependency:resolve-plugins dependency:sources install site site:deploy exec:java
+                </defaultGoal>
+            </build>
+        </profile>
+    </profiles>
 
 </project>
