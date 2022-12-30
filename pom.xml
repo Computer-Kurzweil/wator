@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.woehlke.computer.kurzweil</groupId>
         <artifactId>computer-kurzweil-parent</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </parent>
 
     <artifactId>wator</artifactId>
@@ -14,7 +14,7 @@
 
     <name>Water Torus</name>
     <description>predator–prey Population Dynamics on Planet Water Torus</description>
-    <url>https://java.woehlke.org/wator</url>
+    <url>https://java.woehlke.org/kurzweil/wator</url>
     <inceptionYear>2022</inceptionYear>
 
     <scm>
@@ -32,7 +32,7 @@
     <distributionManagement>
         <site>
             <id>wator.public_html</id>
-            <url>file://${user.home}/public_html/java/wator</url>
+            <url>file://${user.home}/public_html/java/kurzweil/wator</url>
         </site>
         <snapshotRepository>
             <id>snapshots</id>
