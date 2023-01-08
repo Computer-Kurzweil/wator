@@ -23,22 +23,31 @@
             <item name="GitHub project" href="https://github.com/Computer-Kurzweil/wator/" />
         </links>
         <breadcrumbs>
+            <item name="Thomas Woehlke on GitHub" href="https://github.com/thomaswoehlke" />
+            <item name="Computer-Kurzweil Group on GitHub" href="https://github.com/Computer-Kurzweil/" />
+            <item name="Fork this on GitHub" href="https://github.com/Computer-Kurzweil/wator/" />
             <item name="WaTor" href="index.html" />
         </breadcrumbs>
-        <menu name="Main" inherit="top">
+        <menu name="Overview" inherit="top">
             <item name="Home" href="index.html" />
-            <item name="GitHub Issues" href="https://github.com/Computer-Kurzweil/wator/issues" />
-            <item name="GitHub project" href="https://github.com/Computer-Kurzweil/wator" />
-            <item name="License" href="LICENSE.html" />
-            <item name="License" href="LICENSE.code.html" />
+            <item name="Fork this on GitHub" href="https://github.com/Computer-Kurzweil/wator" />
+            <item name="Computer-Kurzweil Group on GitHub" href="https://github.com/Computer-Kurzweil/" />
+            <item name="Thomas Woehlke on GitHub" href="https://github.com/thomaswoehlke" />
+            <item name="Donate" href="https://www.paypal.me/ThomasWoehlke" />
             <item name="w: predator–prey equations" href="https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations" />
             <item name="w: Paul Lester Errington" href="https://en.wikipedia.org/wiki/Paul_Lester_Errington" />
             <item name="w: Ecology" href="https://en.wikipedia.org/wiki/Ecology" />
         </menu>
-        <menu name="Contribute" inherit="bottom">
-            <item name="Issues" href="https://github.com/Computer-Kurzweil/wator/issues/" />
-            <item name="Fork on GitHub" href="https://github.com/Computer-Kurzweil/wator/" />
-            <item name="Donate" href="https://www.paypal.me/ThomasWoehlke" />
+        <menu name="License" inherit="top">
+            <item name="License" href="LICENSE.html" />
+            <item name="Copyright" href="LICENSE.code.html" />
+        </menu>
+        <menu name="Progress" inherit="bottom">
+            <item name="CHANGELOG" href="CHANGELOG.html" />
+            <item name="TODO" href="TODO.html" />
+            <item name="Github: Issues" href="https://github.com/Computer-Kurzweil/wator/issues/" />
+            <item name="Github: Milestones" href="https://github.com/Computer-Kurzweil/wator/milestones" />
+            <item name="Github: Releases" href="https://github.com/Computer-Kurzweil/wator/releases/" />
         </menu>
         <menu name="Maven Reports" ref="reports" inherit="bottom"/>
     </body>
