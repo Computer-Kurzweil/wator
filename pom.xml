@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>wator</artifactId>
-    <version>1.0.7-SNAPSHOT</version>
+    <version>1.0.7</version>
     <packaging>jar</packaging>
 
     <name>Water Torus</name>
@@ -21,7 +21,7 @@
         <connection>scm:git@github.com:Computer-Kurzweil/wator.git</connection>
         <developerConnection>scm:git:git@github.com:Computer-Kurzweil/wator.git</developerConnection>
         <url>https://github.com/Computer-Kurzweil/wator/tree/${project.scm.tag}</url>
-        <tag>HEAD</tag>
+        <tag>wator-1.0.7</tag>
     </scm>
 
     <issueManagement>
