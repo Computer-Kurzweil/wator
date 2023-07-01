@@ -51,4 +51,15 @@
         </menu>
         <menu name="Maven Reports" ref="reports" inherit="bottom"/>
     </body>
+    <custom>
+        <fluidoSkin>
+            <topBarEnabled>true</topBarEnabled>
+            <topBarContailerStyle>width:90%</topBarContailerStyle>
+            <navBarStyle>navbar-inverse</navBarStyle>
+            <sideBarEnabled>false</sideBarEnabled>
+            <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+            <breadcrumbDivider>»</breadcrumbDivider>
+            <skipGenerationDate>true</skipGenerationDate>
+        </fluidoSkin>
+    </custom>
 </project>
